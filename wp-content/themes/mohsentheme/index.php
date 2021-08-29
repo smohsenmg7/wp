@@ -1,7 +1,9 @@
 <?php 
-function showing ($name,$color)  
-{
-    echo "<p>hi my name is $name and my color is $color</p>";
+$myarray=["mohsen","ali","3asdf","sdf"];
+$count=0;
+while($count<count($myarray)){
+    echo "<li> $myarray[$count]</li>";
+    $count++;
 }
 
 ?>
