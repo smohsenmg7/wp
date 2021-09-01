@@ -1,10 +1,13 @@
-<?php 
-$myarray=["mohsen","ali","3asdf","sdf"];
-$count=0;
-while($count<count($myarray)){
-    echo "<li> $myarray[$count]</li>";
-    $count++;
-}
+<?php
 
+$count = 0;
+while ( have_posts() ) {
+	the_post();
+	?>
+    <h2> <a href="<?php the_permalink(); ?>"> <?php the_title() ?> </a>  </h2>
+     <?php the_content(); ?>
+
+	<?php
+}
 ?>
 
