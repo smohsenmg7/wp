@@ -50,7 +50,7 @@
 				  ) );
 				  ?>
               </ul>
-          </div>
+          </div><k></k>
 
           <div class="generic-content">
               <p><?php the_content(); ?>
