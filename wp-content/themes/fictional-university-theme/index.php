@@ -4,8 +4,8 @@ get_header(); ?>
     <div class="page-banner">
         <div class="page-banner__bg-image"
              style="background-image: url(<?php echo get_theme_file_uri( '/images/ocean.jpg' ) ?>);"></div>
-        <div class="page-banner__content container t-center c-white">
-            <h1 class="headline headline--large">Welcome to out Blog</h1>
+        <div class="page-banner__content container container--narrow">
+            <h1 class="page-banner__title">Welcome to out Blog</h1>
             <div class="page-banner__intro">
                 <p>keep up with out latest postss</p>
             </div>
