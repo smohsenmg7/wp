@@ -9,10 +9,24 @@ function university_files() {
 
 function theme_features() {
 //	add_theme_support('title-tag');
-	register_nav_menu('HeaderMenuLocation', 'Header Menu location');
-	register_nav_menu('footerMenuLocationOne', 'Footer Menu location One');
-	register_nav_menu('footerMenuLocationTwo', 'Footer Menu location Two');
+	register_nav_menu( 'HeaderMenuLocation', 'Header Menu location' );
+	register_nav_menu( 'footerMenuLocationOne', 'Footer Menu location One' );
+	register_nav_menu( 'footerMenuLocationTwo', 'Footer Menu location Two' );
 }
+
 
 add_action( 'wp_enqueue_scripts', 'university_files' );
 add_action( 'after_setup_theme', 'theme_features' );
+
+function university_post_types() {
+	register_post_type( 'event', array(
+		'public'    => true,
+		'labels'    => array(
+			'name' => 'Events',
+			'a'
+		),
+		'menu_icon' => 'dashicons-calendar'
+	) );
+}
+
+add_action( 'init', 'university_post_types' );
