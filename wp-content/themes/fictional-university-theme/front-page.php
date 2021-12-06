@@ -23,9 +23,9 @@
 				?>
 				<?php while ( $homepageEvents->have_posts() ) {
 					$homepageEvents->the_post();
-
-
 					?>
+                    <li> <?php the_title() ?></li>
+
 					<?php
 				}
 				?>
